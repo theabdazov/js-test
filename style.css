@@ -1,0 +1,207 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.container{
+  flex: 1 0 auto;
+}
+
+/* header */
+.header-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid #e4e4e4 1px
+}
+
+.header{
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu{
+  display: flex;
+}
+
+.menu-item.logo{
+  padding: 0;
+}
+
+.menu-item.logo>img{
+  height: 35px;
+}
+
+.menu-item{
+  padding: 10px;
+  font-weight: 500
+}
+
+.authentication{
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* ./-- header */
+
+/* content */
+.content-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress{
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+  color: #0596ff;
+}
+
+.content{
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.card{
+  max-width: 310px;
+  padding: 10px;
+}
+
+.card-title {
+  line-height: 1.4rem;
+  position: relative;
+  max-height: calc(1.4rem * 2);
+  overflow: hidden;
+  padding-right: 1rem;
+}
+.card-title::before {
+  position: absolute;
+  content: "...";
+  bottom: 0;
+  right: 0;
+}
+.card-title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1rem;
+  height: 1rem;
+  background: white;
+}
+
+/* </-- content */
+
+.panel-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.panel{
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.control{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.control>input[type=text]{
+  width: 300px;
+  border-width: 0;
+  border-bottom: 1px solid #e5e5e5;
+  height: 30px;
+  font-size: 16px;
+}
+.control>input[type=text]:focus{
+  outline: none !important;
+  border-bottom: 1px solid #5da9e0;
+}
+.control>input[type=text]:disabled{
+  border-bottom: 1px solid #e5e5e5;
+  background-color: white;
+  cursor: not-allowed;
+}
+
+.control label{
+  color: #8f8f8f;
+}
+
+.control > button{
+  margin-top: 18px;
+  border-radius: 0;
+  height: 30px;
+  border: none;
+  min-width: 200px;
+  font-size: 16px;
+  background-color: #5da9e0;
+  color: #f4fafd;
+}
+
+.control > button:disabled{
+  background-color: #e5e5e5;
+  cursor: not-allowed;
+}
+
+
+
+/* footer */
+footer{
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  -webkit-box-shadow: 0px -12px 3px -10px rgba(230,227,230,0.95); 
+  box-shadow: 0px -12px 3px -10px rgba(230,227,230,0.95);
+}
+
+.footer-content{
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-section{
+  padding: 10px
+}
+
+ul{
+  padding-left: 0;
+  list-style: none;
+}
+
+.hide-block{
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+}
+
+
+/* </-- footer */
